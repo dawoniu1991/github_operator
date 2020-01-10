@@ -1,0 +1,78 @@
+新建远程分支qwer12并推送 
+ 501  mkdir testqq
+  502  cd testqq/
+  503  ll
+  504  git clone https://github.com/dawoniu1991/test11.git
+  505  ll
+  506  cd test11/
+  507  ll
+  508  git checkout -b qwer12
+  509  ll
+  510  rm ./*
+  511  ll
+  512  cp ../../../../201910/mxnet-on-pyspark_old_version/setup.py .
+  513  cp ../../../../201910/mxnet-on-pyspark_old_version/compile.sh .
+  514  ll
+  515  git add .
+  516  git commit -m "another test"
+  517   git config  user.email you@example.com
+  518   git config  user.name You
+  519  git commit -m "another test"
+  520  ll
+  521  git push origin qwer12
+  
+  
+  
+  
+  
+修改已有远程分支qwer12，并推送修改结果
+    503  git clone https://github.com/dawoniu1991/test11.git
+  504  cd test11/
+  505  git checkout qwer12
+  506  ll
+  507  rm column_name_lr
+  508  cp ../../../../201911/zhouyujie/kudu_column_name .
+  509  vi qww
+  510  vi test.py
+  511  git add .
+  512  git commit -m "mytest again"
+  513   git config  user.email you@example.com
+  514  git config  user.name You
+  515  git commit -m "mytest again"
+  516  git push origin qwer12
+
+
+
+
+查看版本日志
+git log --pretty=oneline
+git log --oneline
+git reflog
+git log
+
+
+回退远程分支版本
+git clone https://github.com/dawoniu1991/test11.git
+cd test11/
+ll
+git checkout qwer12
+git log --pretty=oneline
+git reset --hard de38c6a0174944db29c2ee8a5da6e8db882db23e
+git push -f origin qwer12
+
+
+
+
+推送已有的master分支
+  501  git clone https://github.com/dawoniu1991/test11.git
+  502  ll
+  503  cd test11/
+  504  ll
+  505  vi qwer
+  506  git add .
+  507  git commit -m "testtest"
+  508  git config  user.email you@example.com
+  509  git config  user.name You
+  510  git commit -m "testtest"
+  511  git push origin master
+
