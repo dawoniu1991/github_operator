@@ -76,3 +76,23 @@ git push -f origin qwer12
   510  git commit -m "testtest"
   511  git push origin master
 
+
+在本地拷贝远程仓库的funtest分支，并创建为本地的anothertest分支，并修改代码，提交到远程仓库后，成为远程仓库的anothertest分支。然后可以参考下列url网址，在gitlab中提交merge request。
+ 1060  git clone http://gitlab.mobvista.com/fan.jiang/spark-join-pytorch.git
+ 1061  cd spark-join-pytorch/
+ 1062  git branch -a
+ 1063  cat pytorch_spark_mnist.py 
+ 1064  ll
+ 1065  git branch -a
+ 1066  git checkout -b anothertest remotes/origin/funtest
+ 1067  cat pytorch_spark_mnist.py 
+ 1068  vi pytorch_spark_mnist.py 
+ 1069  git add .
+ 1070  git commit -m "another test"
+ 1071  git branch -a
+ 1072  git push origin anothertest
+ 1073  history
+ 
+
+ merge request参考网址
+https://kanda.me/2018/05/09/merge-request-basic-overview/
