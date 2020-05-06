@@ -20,3 +20,51 @@
   520  git commit -m "change"
   521  git push
 
+
+
+
+
+  501  git clone http://gitlab.mobvista.com/fan.jiang/mytest.git
+  502  cd mytest/
+  503  git branch -a
+  504  ll
+  505  git checkout -b othertest origin/test0506
+  506  ll
+  507  git branch -a
+  508  git push origin othertest
+  509  git pull
+  510  ll
+  511  vi words.txt
+  512  vi test.txt
+  513  ll
+  514  git add .
+  515  git commit -m "add file"
+  516  git config  user.email "fan.jiang@mobvista.com"
+  517  git config  user.name "fan.jiang"
+  518  git commit -m "add changes"
+  519  git push
+  520  git branch --set-upstream-to=origin/othertest
+  521  git push
+
+
+
+
+
+
+
+  501  git clone http://gitlab.mobvista.com/fan.jiang/mytest.git
+  502  cd mytest/
+  503  ll
+  504  git branch -a
+  505  git checkout -b othertest origin/othertest
+  506  ll
+  507  git branch -a
+  508  vi python.txt
+  509  vi readme
+  512  git add .
+  513  git commit -m "add python"
+  514   git config user.email "fan.jiang@mobvista.com"
+  515   git config user.name "fan.jiang"
+  516  git commit -m "add python"
+  517  git push
+
