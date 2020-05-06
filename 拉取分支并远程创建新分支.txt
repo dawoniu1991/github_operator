@@ -1,0 +1,22 @@
+  501  git clone http://gitlab.mobvista.com/fan.jiang/mytest.git
+  502  ll
+  503  cd mytest/
+  504  ll
+  505  git branch -a
+  506  git checkout -b test0506
+  507  git branch -a
+  508  ll
+  509  git push origin test0506
+  510  git pull
+  511  git branch --set-upstream-to=origin/test0506
+  512  git pull
+  513  touch words.txt
+  514  vi words.txt
+  515  vi readme
+  516  git add .
+  517  git commit -m "change"
+  518  git config user.email "fan.jiang@mobvista.com"
+  519  git config user.name "fan.jiang"
+  520  git commit -m "change"
+  521  git push
+
