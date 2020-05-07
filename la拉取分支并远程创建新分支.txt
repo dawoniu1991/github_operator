@@ -68,3 +68,28 @@
   516  git commit -m "add python"
   517  git push
 
+
+
+
+
+
+
+
+
+
+
+  501  git clone http://gitlab.mobvista.com/fan.jiang/mytest.git
+  502  cd mytest/
+  503  git branch -a
+  504  git checkout -b test0506 origin/test0506
+  505  git branch -a
+  506  ll
+  507  vi words.txt
+  508  vi javahello.txt
+  509  git add .
+  510  git commit -m "change test"
+  511  git config user.email "fan.jiang@mobvista.com"
+  512  git config user.name "fan.jiang"
+  513  git commit -m "change test"
+  514  git push
+
